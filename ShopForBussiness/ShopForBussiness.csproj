@@ -162,6 +162,7 @@
     <Content Include="Content\bootstrap-reboot.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Images\basket.png" />
     <Content Include="Global.asax" />
     <Content Include="Login.aspx" />
     <Content Include="Index.aspx" />
@@ -234,6 +235,7 @@
       <DependentUpon>Basket.aspx</DependentUpon>
     </Compile>
     <Compile Include="Domain\Address.cs" />
+    <Compile Include="Domain\Cart.cs" />
     <Compile Include="Domain\DomainException.cs" />
     <Compile Include="Domain\ErrorMessages.cs" />
     <Compile Include="Domain\Order.cs" />
@@ -321,6 +323,7 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

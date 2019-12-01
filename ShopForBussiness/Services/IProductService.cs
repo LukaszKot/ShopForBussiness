@@ -8,8 +8,11 @@ namespace ShopForBussiness.Services
     {
         Task<IEnumerable<ProductDto>> GetAll();
         Task<ProductDto> Get(int id);
-        Task Update(int id, string name, string category, float prize, string description, int amountInMagazine);
+        Task Update(int id, string name, string category, float prize, string description,string imageUrl, int amountInMagazine);
         Task Remove(int id);
-        Task Add(string name, string category, float prize, string description, int amountInMagazine);
+        Task Add(string name, string category, float prize, string description,string imageUrl, int amountInMagazine);
+        Task<IEnumerable<string>> GetAuthors();
+        Task<IEnumerable<ProductDto>> GetWithText(string text);
+        Task<IEnumerable<ProductDto>> GetProductsWithAuthor(string author);
     }
 }

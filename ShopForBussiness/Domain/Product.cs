@@ -4,9 +4,10 @@
     {
         public int ID { get; private set; }
         public string Name { get; set; }
-        public string Category { get; set; }
+        public string Author { get; set; }
         public float Prize { get; private set; } 
         public string Description { get; set; }
+        public string ImageUrl { get; set; }
         public int AmountInMagazine { get; private set; }
 
         protected Product()
@@ -14,14 +15,15 @@
 
         }
 
-        public Product(int id, string name, string category, float prize, string description, int amountInMagazine)
+        public Product(int id, string name, string author, float prize, string description, string imageUrl, int amountInMagazine)
         {
             ID = id;
             Name = name;
-            Category = category;
+            Author = author;
             SetPrize(prize);
             Description = description;
             SetAmountInMagazine(amountInMagazine);
+            ImageUrl = imageUrl;
         }
 
         public void SetAmountInMagazine(int amountInMagazine)
